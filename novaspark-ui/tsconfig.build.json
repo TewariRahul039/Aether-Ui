@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/lib"],
+  // Exclude stories, tests, and other non-library files from the declaration output
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/stories",
+    "**/*.stories.tsx",
+    "**/*.test.tsx",
+    "src/App.tsx", // Exclude example app files
+    "src/main.tsx" // Exclude example app entry point
+  ]
+}
